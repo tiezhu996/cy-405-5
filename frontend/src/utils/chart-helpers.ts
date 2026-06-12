@@ -16,7 +16,7 @@ export interface FunnelPoint extends ChartPoint {
 
 function maxReachedStage(position: Position, interviews: Interview[]): InterviewStage {
   return interviews.reduce((current, interview) => {
-    return stageRank[interview.round] < stageRank[current] ? interview.round : current;
+    return stageRank[interview.round] > stageRank[current] ? interview.round : current;
   }, position.stage);
 }
 

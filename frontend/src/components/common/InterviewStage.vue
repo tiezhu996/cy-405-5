@@ -84,7 +84,7 @@ function saveInterview(): void {
     interviewer: interviewForm.interviewer,
     mode: interviewForm.mode,
     feedback: interviewForm.feedback,
-    notes: props.interview.notes,
+    notes: interviewForm.notes,
     round: props.interview.round,
     positionId: props.interview.positionId
   });

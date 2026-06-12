@@ -91,7 +91,7 @@ export const usePositionStore = defineStore('position', () => {
       ...draft,
       id: createId('position'),
       createdAt: timestamp,
-      updatedAt: draft.appliedDate
+      updatedAt: timestamp
     };
     positions.value.unshift(position);
     return position;
